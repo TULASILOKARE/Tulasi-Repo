@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- browser reset  -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- new styling specific to this application -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="titlebar">
+            <img src="./timer.webp" alt="logo" class="title-img">
+            <h1 class="title">Tulasi's Scheduler</h1>
+        </div>
+        <div class="menu-bar">
+            
+            <!-- Enter Task -->
+            <div class="menu">
+                <div class="add-input">
+                    <input type="text" name="" id=""
+                    placeholder="Enter Task"
+                    ></div>
+
+            </div>
+            <!-- volume -->
+            <div class="menu">
+                <div class="menu-btn">
+                    <input type="time" id="appt" name="appt"></div>
+                
+            </div>
+            <!-- open -->
+            <div class="menu">
+                <div class="menu-btn" id="audioBtn"></div>
+                <input type="file" class="audioInput" id="audioInput">
+            </div>
+            <div class="add-btns">
+                <div class="btn" id="addTask">Add Task
+                   
+                </div>
+                <div class="btn" id="deleteTask">Delete Task
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div>
+            <!-- current task, stop alarm/snoose? -->
+            <div class="menu-bar1">
+                
+                <h2 class="title">Current Task:</h2>
+                <div class="title1"><ul class="task">Study</ul>
+                </div>
+                <div class="title1"> <ul class="time">07:00</ul>
+                </div>
+
+                <!-- <span>class="task"</span>
+                <span>class="time"</span> -->
+                <div class="placeholder btn" id="stopAlarm">stop alarm
+                   
+                </div>
+            </div>
+            <!-- done postone rejected -->
+            <div class="menu-bar1">
+                <div class="back-btn btn" id="doneTask">Done
+                   
+                </div>
+                <div class="placeholder btn" id="postponeTask">Postpone
+                    
+                </div>
+                <div class="placeholder btn" id="RejectedTask">Rejected
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+    </main>
+    
+    <footer>
+        <div class="menu-btns">
+                <div class="back-btn btn" id="TodaysCompletion">Today's Completion
+                    
+                </div>
+                
+               
+                
+                <div class="placeholder btn" id="productivity">Productivity
+                    
+                </div>
+                
+        </div>
+        
+    <div>       
+        <div>
+            <span>
+                completed Tasks:
+                <ul class="list">
+                </ul>
+            </span>
+            <span>
+                Pstponed Tasks: None
+                <ul class="list">
+                </ul>
+            
+            </span>
+            <span>
+                Rejected Tasks: None
+           
+            </span>
+        </div>    
+        <div>
+            <span> 100%</span>
+        </div>
+    </div>    
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
